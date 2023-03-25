@@ -42,11 +42,11 @@ jobs:
           cp .config ./lede/.config
           mv ./lede/* ./
 
-      - name: Install rtw88-usb
-        run: |
-          rm -rf package/kernel/rtw88-usb
-          cd package/kernel
-          git clone https://github.com/ulli-kroll/rtw88-usb.git
+#       - name: Install rtw88-usb
+#         run: |
+#           rm -rf package/kernel/rtw88-usb
+#           cd package/kernel
+#           git clone https://github.com/ulli-kroll/rtw88-usb.git
       # - name: Install Helloword
       #   run: |
       #     echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default 
